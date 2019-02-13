@@ -3,37 +3,67 @@
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
 @import url("https://fonts.googleapis.com/css?family=Hind");
 
-/* landing page */
+/* ------- LANDING PAGE -------- */
 
-.header-color {
-  background: none;
+/* header */
+
+.header-nav {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+
+  font: 12px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-body {
+.header-nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
   color: #fff;
-  /* background: #e96443;
-  background: -webkit-linear-gradient(to right, #904e95, #e96443);
-  background: linear-gradient(to right, #904e95, #e96443); */
 
-  /* background: #355c7d; 
-  background: -webkit-linear-gradient(
-    to left,
-    #c06c84,
-    #6c5b7b,
-    #355c7d
-  ); 
-  background: linear-gradient(
-    to left,
-    #c06c84,
-    #6c5b7b,
-    #355c7d
-  );  */
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
 
-  background: linear-gradient(to right, #5fc3e4, #e55d87);
+.header-nav ul {
+  width: auto;
+  text-align: center;
+  display: inline-block;
+
+  list-style: none;
+}
+
+.header-nav ul li {
+  float: left;
+}
+
+.media {
+  visibility: hidden;
+}
+
+/* background */
+
+body {
+  /* background: linear-gradient(to right, #5fc3e4, #e55d87);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite; */
 }
 
 @-webkit-keyframes Gradient {
@@ -72,61 +102,73 @@ body {
   }
 }
 
-.custom-title img {
-  margin-top: 20px;
-  height: 50px;
+/* scroll button */
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
 }
 
-.landing-grid {
-  text-align: center;
-  position: fixed;
-  top: 20%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-}
-
-.avatar-img {
-  height: 180px;
-  width: 180px;
-  padding-top: 10px;
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
   border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
 }
 
-.banner-text {
-  width: 50%;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 4px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 10px;
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
 }
 
-.banner-text h1 {
-  font-weight: bold;
-  text-align: center;
-  /* font-family: "Quicksand", sans-serif; */
-  font-family: "Hind", sans-serif;
-  font-weight: bold;
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
 
-.banner-text p {
-  font-size: 20px;
-  /* padding: 1em; */
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
-
-.social-links i {
-  color: white;
-  font-size: 3em;
-  padding: 10px;
+@media only screen and (max-width: 500px) {
+  header {
+    visibility: hidden;
+  }
+  .media {
+    visibility: visible;
+  }
 }

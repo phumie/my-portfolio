@@ -1,0 +1,147 @@
+/* imports */
+
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+@import url("https://fonts.googleapis.com/css?family=Hind");
+
+/* landing page */
+
+.header-content {
+  height: 100vh;
+  background: #e38d83;
+  color: white;
+  overflow: hidden;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-title img {
+  margin-top: 20px;
+  height: 50px;
+}
+
+.landing-grid {
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.avatar-img {
+  height: 180px;
+  width: 180px;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+
+.banner-text {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+
+.banner-text h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: bold;
+}
+
+.banner-text p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 3em;
+  padding: 10px;
+}
+
+/* media query for mobile layout */
+
+@media only screen and (max-width: 500px) {
+  .landing-grid {
+    text-align: center;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .avatar-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .banner-text {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  .banner-text h4 {
+    font-size: 20px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+  .social-links i {
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+  }
+}

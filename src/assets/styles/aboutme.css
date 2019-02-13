@@ -1,0 +1,21 @@
+/* @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+@import url("https://fonts.googleapis.com/css?family=Hind"); */
+
+.header-color {
+  background: rgb(48, 48, 48);
+}
+.about {
+  height: auto;
+  width: 100%;
+  overflow-y: scroll;
+  background: rgb(22, 22, 22);
+  padding: 20px;
+}
+
+.about h4 {
+  font-family: "Hind", sans-serif;
+}
+
+.about p {
+  font-family: "Quicksand", sans-serif;
+}

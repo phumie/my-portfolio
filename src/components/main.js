@@ -11,9 +11,11 @@ const Main = () => (
     <Route exact path="/" component={LandingPage} />
     <Route path="/aboutme" component={AboutMe} />
     <Route path="/contact" component={Contact} />
-    <Route path="/projects" component={Projects} />
+    <Route path="/portfolio" component={Projects} />
     <Route path="/resume" component={Resume} />
   </Switch>
 );
+
+class App extends React.Component {}
 
 export default Main;

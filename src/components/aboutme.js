@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import "../assets/styles/aboutme.css";
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <h1>About Me Page</h1>
-      </div>
+      <section class="about">
+        <div className="about">
+          <h4>ABOUT ME</h4>
+          <p>dvfbgbfv</p>
+          <h4>CONTACT DETAILS</h4>
+          <p>dvfb</p>
+        </div>
+      </section>
     );
   }
 }

@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class Resume extends Component {
   render() {
     return (
-      <div>
-        <h1>Resume Page</h1>
-      </div>
+      <section id="resume">
+        <div>
+          <h1>Resume Page</h1>
+        </div>
+      </section>
     );
   }
 }
