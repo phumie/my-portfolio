@@ -4,18 +4,37 @@
 .header-color {
   background: rgb(48, 48, 48);
 }
-.about {
-  height: auto;
+.about-content {
+  height: 100vh;
   width: 100%;
   overflow-y: scroll;
-  background: rgb(22, 22, 22);
+  background: rgb(20, 20, 20);
   padding: 20px;
 }
 
-.about h4 {
-  font-family: "Hind", sans-serif;
+.avatar-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
-.about p {
+.about-info {
+  text-align: center;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.about-info h4 {
+  font-family: "Hind", sans-serif;
+  color: rgb(218, 214, 214);
+  text-align: center;
+}
+
+.about-info h5 {
   font-family: "Quicksand", sans-serif;
+  color: rgb(189, 185, 185);
 }

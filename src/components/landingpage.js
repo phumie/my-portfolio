@@ -46,9 +46,9 @@ class Landing extends Component {
           />
           <Grid className="landing-grid">
             <Cell col={12}>
-              <img src={logo} className="avatar-img" />
+              {/* <img src={logo} className="avatar-img" /> */}
               <div className="banner-text">
-                <h1>Phumie Nevhutala</h1>
+                {/* <h1>Phumie Nevhutala</h1> */}
                 <h4>DEVELOPER & UI/UX DESIGNER</h4>
                 <p>HTML/CSS | BOOTSTRAP | REACT | ANGULAR | JAVA</p>
                 <div className="social-links">

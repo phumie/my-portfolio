@@ -5,7 +5,8 @@ class Resume extends Component {
     return (
       <section id="resume">
         <div>
-          <h1>Resume Page</h1>
+          {/* <h1>Resume Page</h1> */}
+          <p>dvdfxbfgb fgc</p>
         </div>
       </section>
     );

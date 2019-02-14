@@ -3,8 +3,7 @@ import "./App.css";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
-import scrollToComponent from "react-scroll-to-component";
-import HeaderLogo from "./assets/images/thechiqgeek_white.png";
+import HeaderLogo from "./assets/images/phumie-logo-white.png";
 
 const particleOpt = {
   particles: {
@@ -25,17 +24,13 @@ const particleOpt = {
   }
 };
 
-const customTitle = (
-  <div className="custom-title">
-    <img src={HeaderLogo} />
-  </div>
-);
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="fullscreen">
         <div className="fullscreen">
           <header className="header-nav">
+            <img className="title-img" src={HeaderLogo} />
             <nav>
               <ul id="nav" className="nav">
                 <li className="current">
@@ -69,7 +64,7 @@ class App extends Component {
           <Main />
         </div>
 
-        <Layout className="media">
+        <Layout className="mobile">
           <Drawer title="Phumie Nevhutala" className="media">
             <Navigation>
               <Link to="/">Home</Link>
